@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://ci3o857iqx563"
+path="res://.godot/imported/blank_spell_icon.png-67f3e7cc7ac7cb4ab20ab6b5663dccb0.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://spells/sprites/icons/blank_spell_icon.png"
+dest_files=["res://.godot/imported/blank_spell_icon.png-67f3e7cc7ac7cb4ab20ab6b5663dccb0.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,501 @@
+[gd_scene load_steps=26 format=3 uid="uid://brmt3xwasqlgc"]
+
+[ext_resource type="Texture2D" uid="uid://bbw2uumi5iixb" path="res://menus/img/background.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://w6guicq5830i" path="res://menus/img/TOGETHER-small.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://cne6fpt7xivst" path="res://menus/img/croc-solo-small.png" id="3"]
+[ext_resource type="Script" path="res://menus/sine_movement.gd" id="4"]
+[ext_resource type="Texture2D" uid="uid://s1dipfhyxqyt" path="res://menus/img/owl-solo-small.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://bgwuoolllkfm7" path="res://menus/img/cat-solo-spawn.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://cow3oxt3giy3c" path="res://menus/img/wolf-solo-spawn.png" id="7"]
+[ext_resource type="Script" path="res://menus/sine_rotation.gd" id="8"]
+[ext_resource type="Texture2D" uid="uid://crqrx1cku3gbj" path="res://menus/img/ICE_EFFECTS_SMALL.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://c4hcj1x0p0xoj" path="res://menus/img/FIRE_EFFECTS_SMALL.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://pd7i4i8j1dqx" path="res://menus/img/WATER_EFFECTS_SMALL.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://bnv1hr4yvuwr5" path="res://menus/img/ROCK_EFFECTS_SMALL.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://dg4oi66c20d63" path="res://menus/img/ELECTRC_EFFECTS_SMALL.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://j0xqv51txihy" path="res://menus/img/WIND_EFFECTS_SMALL.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://bqson8xojve8p" path="res://menus/img/LOGO-ARCANE.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://bohnfxrfkbdcq" path="res://menus/img/LOGO-RAIDERS.png" id="16"]
+[ext_resource type="FontFile" uid="uid://pq83d6oh436i" path="res://ui/fonts/Rakkas-Regular.ttf" id="17"]
+[ext_resource type="Script" path="res://menus/button_focus_grabber.gd" id="18"]
+[ext_resource type="Texture2D" uid="uid://dnsrxgk786yrt" path="res://discord-white-icon.webp" id="19"]
+[ext_resource type="Script" path="res://menus/DemoPopup.gd" id="20"]
+[ext_resource type="FontFile" uid="uid://jpoe0li3513x" path="res://ui/fonts/Merriweather-Regular.ttf" id="21"]
+
+[sub_resource type="GDScript" id="GDScript_mpxdx"]
+resource_name = "main_menu"
+script/source = "extends CanvasLayer
+#Authored by Ethan. Please consult for any modifications or major feature requests.
+
+const multiplayer_lobby : PackedScene = preload(\"res://multiplayer/multiplayerLobby/multiplayerLobby.tscn\")
+#@export var menu : Node
+@export var steam_error_window : PanelContainer
+@export var steam_error_label : Label
+@export var online_button : Button
+@export var demo_badge : Button
+@export var demo_popup : Control
+
+#region Godot methods
+func _ready():
+	#Move window such that the top bar isn't above the screen - Ethan 9/2/25
+	if DisplayServer.window_get_mode() == DisplayServer.WINDOW_MODE_WINDOWED:
+		# Get the current window
+		var window = get_window()
+		# And get the current screen the window's in
+		var screen = window.current_screen
+		# Get the usable rect for that screen
+		var screen_rect = DisplayServer.screen_get_usable_rect(screen)
+		# Get the window's size
+		var window_size = window.get_size_with_decorations()
+		# Set its position to the middle
+		window.position = screen_rect.position + (screen_rect.size / 2 - window_size / 2)
+		
+	GameManager.isPaused = false
+	Dialogic.end_timeline()
+	
+	$VBoxContainer/Horiz/QuitButton.visible = OS.get_name() != \"Web\"
+	$VBoxContainer/OnlineButton.visible = OS.get_name() != \"Web\"
+	
+	AudioManager.play_track_instant(\"menu\")
+	$VBoxContainer/VersionInfo/VersionLabel.text = \"Ver. \" + ProjectSettings.get_setting(\"application/config/version\", \"0\")
+	
+	if (!Steam.loggedOn()):
+		steam_error_window.show()
+		steam_error_label.text = \" Connection to Steam failed, Online functions disabled: Not logged into steam \"
+	if (!Steam.isSubscribed()):
+		steam_error_window.show()
+		steam_error_label.text += \"\\n Connection to Steam failed, Online functions disabled: Game is not owned \"
+		online_button.disabled = true
+	if(!SteamManager.live_mode):
+		steam_error_window.show()
+		steam_error_label.label_settings.font_color = Color.YELLOW
+		steam_error_label.text += \"\\n Warning: Spacewar in use, Controller input may break \"
+		online_button.disabled=false
+	
+	Steam.input_configuration_loaded.connect(set_white)
+	
+	$VBoxContainer/LocalPlayButton.grab_focus()
+	
+	DiscordRPC.details = \"In the menus\"
+	DiscordRPC.state = \"\"
+	DiscordRPC.refresh()
+	
+	#demo_badge.visible = SteamManager.is_demo()
+	#demo_popup.visible = SteamManager.is_demo()
+	#demo_popup.close_button.grab_focus() 
+
+	
+	#MultiplayerInput.set_ui_action_device(-2)
+##endregion
+
+#region Signal methods
+func _on_quit_button_pressed():
+	#await Analytics.handle_exit() #sends exit game event to analytics
+	get_tree().quit()
+	
+func _on_online_button_pressed():
+	GameManager.mode = GameManager.MultiplayerMode.Online
+	get_tree().change_scene_to_file(\"res://multiplayer/serverBrowser/serverBrowser.tscn\")
+	
+func _on_local_play_button_pressed():
+	GameManager.mode = GameManager.MultiplayerMode.Local
+	get_tree().change_scene_to_file(\"res://rooms/hub/hub.tscn\")
+	#var lobby_scene = multiplayer_lobby.instantiate()
+	#lobby_scene.InitLobby(0)
+	#get_tree().root.add_child(lobby_scene)
+	#queue_free()
+	
+func _on_settings_button_pressed():
+	var new_settings = load(\"res://menus/settings.tscn\").instantiate()
+	new_settings.destroyed.connect($VBoxContainer/SettingsButton.grab_focus)
+	get_tree().root.add_child(new_settings)
+
+func _on_credits_button_pressed():
+	var new_settings = load(\"res://menus/credits.tscn\").instantiate()
+	new_settings.destroyed.connect($VBoxContainer/Horiz/CreditsButton.grab_focus)
+	get_tree().root.add_child(new_settings)
+
+#endregion
+
+#region Other methods
+func set_white(_arg, arg2, _arg3):
+	Steam.setLEDColor(arg2, 255, 255, 255, 0)
+#endregion
+
+
+func _on_discord_button_pressed():
+	OS.shell_open(\"https://discord.com/invite/3BPYMHqNve\")
+
+
+func _on_feedback_button_pressed():
+	OS.shell_open(\"https://forms.gle/X1ToW3kE8Pzpy4mu5\")
+
+
+func _on_demo_badge_pressed():
+	demo_popup.show()
+
+
+func _on_no_button_pressed_timer_timeout():
+	print(\"changing\")
+	#get_tree().change_scene_to_file(\"res://menus/sizzle_reel.tscn\")
+
+
+func _input(e):
+	if !e is InputEventJoypadMotion:
+		#print(\"OASIUFHKDSJHF\")
+		$NoButtonPressedTimer.stop()
+		$NoButtonPressedTimer.start()
+"
+
+[sub_resource type="LabelSettings" id="LabelSettings_ko00r"]
+font_size = 32
+
+[sub_resource type="LabelSettings" id="LabelSettings_sscpa"]
+font_size = 32
+font_color = Color(0.905882, 0, 0.466667, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_qs2c7"]
+font_size = 61
+shadow_size = 4
+shadow_color = Color(0, 0, 0, 1)
+
+[node name="MainMenu" type="CanvasLayer"]
+script = SubResource("GDScript_mpxdx")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0196078, 0.0745098, 0.101961, 1)
+
+[node name="BackgroundArt" type="TextureRect" parent="."]
+modulate = Color(0.784314, 0.784314, 0.784314, 1)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+texture = ExtResource("1")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+visible = false
+modulate = Color(1, 1, 1, 0.384314)
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1323.0
+offset_top = -940.0
+offset_right = -63.0
+grow_horizontal = 0
+grow_vertical = 0
+texture = ExtResource("2")
+stretch_mode = 4
+
+[node name="BouncingArt" type="Node2D" parent="."]
+
+[node name="Croc-solo-small" type="Sprite2D" parent="BouncingArt"]
+position = Vector2(811.4, 878.4)
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("3")
+script = ExtResource("4")
+starting_t = 40.0
+frequency = 1.5
+
+[node name="Owl-solo-small" type="Sprite2D" parent="BouncingArt"]
+position = Vector2(1096.4, 833)
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("5")
+script = ExtResource("4")
+starting_t = 30.0
+frequency = 1.5
+
+[node name="Cat-solo-spawn" type="Sprite2D" parent="BouncingArt"]
+position = Vector2(1398, 865.4)
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("6")
+script = ExtResource("4")
+starting_t = 20.0
+frequency = 1.5
+
+[node name="Wolf-solo-spawn" type="Sprite2D" parent="BouncingArt"]
+position = Vector2(1671.4, 919.4)
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("7")
+script = ExtResource("4")
+starting_t = 10.0
+frequency = 1.5
+
+[node name="Logo" type="Node2D" parent="."]
+position = Vector2(1239, 291)
+script = ExtResource("8")
+amplitude = 1.0
+frequency = 2.0
+
+[node name="IceEffectsSmall" type="Sprite2D" parent="Logo"]
+position = Vector2(-483, 132)
+scale = Vector2(0.140655, -0.140655)
+texture = ExtResource("9")
+
+[node name="FireEffectsSmall" type="Sprite2D" parent="Logo"]
+position = Vector2(525, 122)
+scale = Vector2(0.2, -0.2)
+texture = ExtResource("10")
+
+[node name="WaterEffectsSmall" type="Sprite2D" parent="Logo"]
+position = Vector2(567, -98)
+rotation = 2.84175
+scale = Vector2(0.2, -0.2)
+texture = ExtResource("11")
+
+[node name="RockEffectsSmall" type="Sprite2D" parent="Logo"]
+position = Vector2(-463, -88)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("12")
+
+[node name="ElectrcEffectsSmall" type="Sprite2D" parent="Logo"]
+position = Vector2(-791, 36)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("13")
+
+[node name="WindEffectsSmall" type="Sprite2D" parent="Logo"]
+position = Vector2(835, 25)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("14")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(0, 25.81)
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 585.0
+offset_top = 226.0
+offset_right = -29.0
+offset_bottom = 531.0
+grow_horizontal = 2
+alignment = 1
+
+[node name="ARCANE" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("15")
+expand_mode = 3
+
+[node name="RAIDERS" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("16")
+expand_mode = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 80.0
+offset_top = -385.0
+offset_right = 558.0
+offset_bottom = 385.0
+grow_vertical = 2
+theme_override_constants/separation = 27
+alignment = 1
+
+[node name="LocalPlayButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 52
+text = "Play Local"
+script = ExtResource("18")
+
+[node name="OnlineButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 52
+text = "Play Online"
+
+[node name="SettingsButton" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 38
+text = "Settings"
+
+[node name="FeedbackButton" type="Button" parent="VBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+focus_neighbor_top = NodePath("../SettingsButton")
+focus_neighbor_bottom = NodePath("../Horiz/CreditsButton")
+theme_override_font_sizes/font_size = 38
+text = "Provide Feedback!"
+
+[node name="Horiz" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="CreditsButton" type="Button" parent="VBoxContainer/Horiz"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_horizontal = 3
+focus_neighbor_top = NodePath("../../FeedbackButton")
+focus_neighbor_right = NodePath("../DiscordButton")
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 38
+text = "Credits"
+script = ExtResource("18")
+
+[node name="DiscordButton" type="Button" parent="VBoxContainer/Horiz"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+focus_neighbor_left = NodePath("../CreditsButton")
+focus_neighbor_top = NodePath("../../FeedbackButton")
+focus_neighbor_right = NodePath("../QuitButton")
+theme_override_constants/icon_max_width = 54
+icon = ExtResource("19")
+icon_alignment = 1
+expand_icon = true
+
+[node name="QuitButton" type="Button" parent="VBoxContainer/Horiz"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_horizontal = 3
+focus_neighbor_left = NodePath("../DiscordButton")
+focus_neighbor_top = NodePath("../../FeedbackButton")
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 38
+text = "Quit"
+
+[node name="VersionInfo" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="VersionLabel" type="Label" parent="VBoxContainer/VersionInfo"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Ver. 24-05-14"
+label_settings = SubResource("LabelSettings_ko00r")
+
+[node name="Button" type="Button" parent="VBoxContainer/VersionInfo"]
+visible = false
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 32
+text = "Demo Info"
+
+[node name="SteamErrorWindow" type="PanelContainer" parent="."]
+visible = false
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -442.0
+offset_top = -48.6666
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="SteamErrorText" type="Label" parent="SteamErrorWindow"]
+layout_mode = 2
+label_settings = SubResource("LabelSettings_sscpa")
+
+[node name="DemoPopup" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("20")
+
+[node name="ColorRect" type="ColorRect" parent="DemoPopup"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.678431)
+
+[node name="MarginContainer" type="MarginContainer" parent="DemoPopup"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 350
+theme_override_constants/margin_top = 80
+theme_override_constants/margin_right = 350
+theme_override_constants/margin_bottom = 80
+
+[node name="PanelContainer" type="PanelContainer" parent="DemoPopup/MarginContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="DemoPopup/MarginContainer/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 30
+
+[node name="VBoxContainer" type="VBoxContainer" parent="DemoPopup/MarginContainer/PanelContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="DemoPopup/MarginContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Welcome to the Arcane Raiders Demo/Playtest!"
+label_settings = SubResource("LabelSettings_qs2c7")
+horizontal_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="DemoPopup/MarginContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_right = 30
+
+[node name="RichTextLabel" type="RichTextLabel" parent="DemoPopup/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/normal_font = ExtResource("21")
+theme_override_font_sizes/normal_font_size = 27
+bbcode_enabled = true
+text = "[font_size=30] [center]Thank you for checking out Arcane Raiders!
+
+This is a test of the stability of the online architecture and game framework. Please report any you find on our [url=\"https://discord.com/invite/3BPYMHqNve\"]Discord Server[/url] or in the [url=\"https://forms.gle/X1ToW3kE8Pzpy4mu5\"]Feedback Form[/url].
+
+We hope you enjoy the game!
+
+[img=300]res://menus/img/verticalWhite.png[/img]"
+
+[node name="MarginContainer2" type="MarginContainer" parent="DemoPopup/MarginContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 300
+theme_override_constants/margin_right = 300
+
+[node name="Button" type="Button" parent="DemoPopup/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/MarginContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 41
+text = "Close"
+script = ExtResource("18")
+
+[node name="NoButtonPressedTimer" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+
+[connection signal="pressed" from="VBoxContainer/LocalPlayButton" to="." method="_on_local_play_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/OnlineButton" to="." method="_on_online_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/SettingsButton" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/FeedbackButton" to="." method="_on_feedback_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Horiz/CreditsButton" to="." method="_on_credits_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Horiz/DiscordButton" to="." method="_on_discord_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Horiz/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/VersionInfo/Button" to="." method="_on_demo_badge_pressed"]
+[connection signal="meta_clicked" from="DemoPopup/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/MarginContainer/RichTextLabel" to="DemoPopup" method="_on_rich_text_label_meta_clicked"]
+[connection signal="pressed" from="DemoPopup/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/MarginContainer2/Button" to="DemoPopup" method="_on_button_pressed"]
+[connection signal="timeout" from="NoButtonPressedTimer" to="." method="_on_no_button_pressed_timer_timeout"]

@@ -1,0 +1,188 @@
+[gd_scene load_steps=10 format=3 uid="uid://brodj84jliqtq"]
+
+[ext_resource type="Script" path="res://menus/pause_menu.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://c11shmi1m4cjj" path="res://items/pickups/pickup_health.png" id="2"]
+[ext_resource type="Script" path="res://multiplayer/steamManager/debugDamageless.gd" id="3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y3umn"]
+bg_color = Color(0.2, 0.113725, 0.0705882, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 8
+border_color = Color(0.65098, 0.54902, 0.423529, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_57ors"]
+bg_color = Color(0.419608, 0.262745, 0.180392, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 8
+border_color = Color(0.65098, 0.54902, 0.423529, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wyv4k"]
+bg_color = Color(0.854902, 0.854902, 0.854902, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.552941, 0.552941, 0.552941, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_yrycy"]
+font_size = 48
+
+[sub_resource type="Animation" id="Animation_yg65t"]
+resource_name = "default"
+length = 0.10000000149011612
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7hx68"]
+_data = {
+"default": SubResource("Animation_yg65t")
+}
+
+[node name="PauseMenu" type="CanvasLayer" node_paths=PackedStringArray("panels_array")]
+script = ExtResource("1")
+panels_array = [NodePath("Control/MarginContainer/MarginContainer/VBoxContainer/ContinueButton"), NodePath("Control/MarginContainer/MarginContainer/VBoxContainer/SettingsButton"), NodePath("Control/MarginContainer/MarginContainer/VBoxContainer/QuitButton")]
+stylebox_normal = SubResource("StyleBoxFlat_y3umn")
+stylebox_selected = SubResource("StyleBoxFlat_57ors")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.152941, 0.152941, 0.152941, 0.505882)
+
+[node name="MarginContainer" type="MarginContainer" parent="Control"]
+process_mode = 3
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -247.0
+offset_right = 250.0
+offset_bottom = 247.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="Control/MarginContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_wyv4k")
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/MarginContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 30
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Label" type="Label" parent="Control/MarginContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_font_sizes/font_size = 92
+text = "Paused"
+horizontal_alignment = 1
+
+[node name="ContinueButton" type="PanelContainer" parent="Control/MarginContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Control/MarginContainer/MarginContainer/VBoxContainer/ContinueButton"]
+layout_mode = 2
+text = "Continue"
+label_settings = SubResource("LabelSettings_yrycy")
+horizontal_alignment = 1
+
+[node name="SettingsButton" type="PanelContainer" parent="Control/MarginContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Control/MarginContainer/MarginContainer/VBoxContainer/SettingsButton"]
+layout_mode = 2
+text = "Settings"
+label_settings = SubResource("LabelSettings_yrycy")
+horizontal_alignment = 1
+
+[node name="FeedbackButton" type="PanelContainer" parent="Control/MarginContainer/MarginContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Control/MarginContainer/MarginContainer/VBoxContainer/FeedbackButton"]
+visible = false
+layout_mode = 2
+text = "Reset Lobby"
+label_settings = SubResource("LabelSettings_yrycy")
+horizontal_alignment = 1
+
+[node name="QuitButton" type="PanelContainer" parent="Control/MarginContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Control/MarginContainer/MarginContainer/VBoxContainer/QuitButton"]
+layout_mode = 2
+text = "Quit to Title"
+label_settings = SubResource("LabelSettings_yrycy")
+horizontal_alignment = 1
+
+[node name="debug_damageless_indicator" type="TextureRect" parent="Control"]
+modulate = Color(1, 1, 1, 0.215686)
+layout_mode = 0
+offset_left = 9.0
+offset_top = 8.0
+offset_right = 73.0
+offset_bottom = 72.0
+texture = ExtResource("2")
+script = ExtResource("3")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_7hx68")
+}
+autoplay = "default"
+
+[connection signal="tree_exiting" from="." to="." method="_on_tree_exiting"]
+[connection signal="mouse_exited" from="Control/MarginContainer/MarginContainer/VBoxContainer/ContinueButton" to="." method="_on_mouse_exited"]
+[connection signal="mouse_exited" from="Control/MarginContainer/MarginContainer/VBoxContainer/SettingsButton" to="." method="_on_mouse_exited"]
+[connection signal="mouse_exited" from="Control/MarginContainer/MarginContainer/VBoxContainer/FeedbackButton" to="." method="_on_mouse_exited"]
+[connection signal="mouse_exited" from="Control/MarginContainer/MarginContainer/VBoxContainer/QuitButton" to="." method="_on_mouse_exited"]

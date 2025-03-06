@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://b6b8ne544hjgj"
+path="res://.godot/imported/spread.png-a6fc1da1aece810235f728cb64da1163.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://spells/projections/spread.png"
+dest_files=["res://.godot/imported/spread.png-a6fc1da1aece810235f728cb64da1163.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

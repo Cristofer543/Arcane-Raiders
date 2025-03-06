@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bxi32523tql4w"
+path="res://.godot/imported/fire_ice_giant_slime_idle_sketch.png-2e49e0ef8b6ce7317c22012bc754d1bb.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://moving_entities/enemies/boss_slime/giant_slime/fire_ice_giant_slime_idle_sketch.png"
+dest_files=["res://.godot/imported/fire_ice_giant_slime_idle_sketch.png-2e49e0ef8b6ce7317c22012bc754d1bb.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

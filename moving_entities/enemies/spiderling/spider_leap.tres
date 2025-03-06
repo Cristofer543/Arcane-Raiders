@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Spell" load_steps=4 format=3 uid="uid://i1l3rxlb3iec"]
+
+[ext_resource type="Resource" uid="uid://ctj0uyr81n57k" path="res://elements/null.tres" id="1"]
+[ext_resource type="PackedScene" uid="uid://beuaa0kmpyqds" path="res://moving_entities/enemies/spiderling/spider_leap.tscn" id="2"]
+[ext_resource type="Script" path="res://spells/spell_base.gd" id="3"]
+
+[resource]
+script = ExtResource("3")
+scene = ExtResource("2")
+element = ExtResource("1")

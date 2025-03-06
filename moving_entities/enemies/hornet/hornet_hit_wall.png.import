@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cpxao3lw3tc4i"
+path="res://.godot/imported/hornet_hit_wall.png-ef8a675902f17a925105193247629a2d.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://moving_entities/enemies/hornet/hornet_hit_wall.png"
+dest_files=["res://.godot/imported/hornet_hit_wall.png-ef8a675902f17a925105193247629a2d.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dv5iywijn4olv"
+path="res://.godot/imported/cyclone.png-236c96ed5687f84c902041ff75a4122d.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://spells/reactions/sprites/cyclone.png"
+dest_files=["res://.godot/imported/cyclone.png-236c96ed5687f84c902041ff75a4122d.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

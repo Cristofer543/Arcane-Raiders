@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://ctlnjks063l3g"
+path="res://.godot/imported/large_spider_move.png-25712cd670726bf9677669023df4493b.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://moving_entities/enemies/large_spider/large_spider_move.png"
+dest_files=["res://.godot/imported/large_spider_move.png-25712cd670726bf9677669023df4493b.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

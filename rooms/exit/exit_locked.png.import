@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dufxby23y78mt"
+path="res://.godot/imported/exit_locked.png-a1a458052ea362b24541e9333cd009cc.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://rooms/exit/exit_locked.png"
+dest_files=["res://.godot/imported/exit_locked.png-a1a458052ea362b24541e9333cd009cc.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://ciug4durujouy"
+path="res://.godot/imported/CHEST.png-7e5ff38a9f74a1478ddf2e6a75d97f4e.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://tilesets/decorations/sprites/CHEST.png"
+dest_files=["res://.godot/imported/CHEST.png-7e5ff38a9f74a1478ddf2e6a75d97f4e.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

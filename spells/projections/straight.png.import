@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://d05bffs8s001d"
+path="res://.godot/imported/straight.png-89435f7c06a01cb880dd17cf9e2da237.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://spells/projections/straight.png"
+dest_files=["res://.godot/imported/straight.png-89435f7c06a01cb880dd17cf9e2da237.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

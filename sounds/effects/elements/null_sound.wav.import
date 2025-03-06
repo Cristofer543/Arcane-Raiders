@@ -1,0 +1,15 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ev7uj6nhq3uq"
+path="res://.godot/imported/null_sound.wav-bf1d67fb4b64f4784bdf47ab8d35866e.sample"
+
+[deps]
+
+source_file="res://sounds/effects/elements/null_sound.wav"
+dest_files=["res://.godot/imported/null_sound.wav-bf1d67fb4b64f4784bdf47ab8d35866e.sample"]
+
+[params]
+
+dummy_value_ignore_me=0

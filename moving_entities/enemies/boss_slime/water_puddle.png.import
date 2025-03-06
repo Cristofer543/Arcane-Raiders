@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dxa0s2yn7n6hc"
+path="res://.godot/imported/water_puddle.png-a3cedb4a54a6817b7335b341cd8267a2.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://moving_entities/enemies/boss_slime/water_puddle.png"
+dest_files=["res://.godot/imported/water_puddle.png-a3cedb4a54a6817b7335b341cd8267a2.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

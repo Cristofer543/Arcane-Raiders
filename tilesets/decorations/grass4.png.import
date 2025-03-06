@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bfbbtqo7sim14"
+path="res://.godot/imported/grass4.png-3b44e6b6f58ddce54953b1dfede52564.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://tilesets/decorations/grass4.png"
+dest_files=["res://.godot/imported/grass4.png-3b44e6b6f58ddce54953b1dfede52564.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

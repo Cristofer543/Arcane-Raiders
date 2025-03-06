@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://ph4uvoqc6xmc"
+path="res://.godot/imported/2d_lights_and_shadows_neutral_point_light.png-3919762f7afb1e4f129678623f5991af.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://tilesets/decorations/2d_lights_and_shadows_neutral_point_light.png"
+dest_files=["res://.godot/imported/2d_lights_and_shadows_neutral_point_light.png-3919762f7afb1e4f129678623f5991af.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

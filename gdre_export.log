@@ -1,0 +1,121 @@
+GDRE Tools v0.9.0-beta.4
+Windows 10.0.26120, NVIDIA GeForce GTX 1660 SUPER, opengl3
+Opening file: C:/Program Files (x86)/Steam/steamapps/common/Arcane Raiders/ArcaneRaiders.exe
+Guessing bytecode revision from engine version: 4.2.1 (rev 0x77af6ca)
+Verified 2092 files, no errors detected!
+Extracted 2092 files, no errors detected!
+WARNING: Converting lossy imports, you may lose fidelity for indicated assets when re-importing upon loading the project
+   at: ImportExporter::_export_imports (modules\gdsdecomp\utility\import_exporter.cpp:241)
+Recreating plugin configs...
+Exporting resources in parallel...
+Saved project config project.godot.
+
+
+********************************EXPORT REPORT********************************
+
+Totals:                                 
+Decompiled scripts:                     0
+Failed scripts:                         0
+Imported resources for export session:  813
+Successfully converted:                 813
+Lossy:                                  3
+Rewrote metadata:                       377
+Non-importable conversions:             73
+Not converted:                          0
+Failed conversions:                     0
+-------------
+
+
+The following files were converted from an import that was stored lossy.
+You may lose fidelity when re-importing these files upon loading the project.
+res://.godot/imported/rpg_box.webp-6ea0804b52e01599dbc94ffacc31d433.ctex to res://addons/dialogic/Example Assets/backgrounds/rpg_box.webp
+res://.godot/imported/discord-white-icon.webp-e4658cf6b13a2d78541017d3f582c4d7.ctex to res://discord-white-icon.webp
+res://.godot/imported/noise_cheeseholes.jpg-964b3e4910e4e07707d0caa09cfcf2e7.ctex to res://tilesets/decorations/noise_cheeseholes.jpg
+------
+
+The following files were converted and saved to a non-original path, but did not have their import data rewritten.
+These files will not be re-imported when loading the project.
+res://.godot/imported/minosUUIDGeneratorForGodotIcon.svg-750fa742ce9555cdff8e083f49f413ee.ctex to res://.assets/Promotion/minosUUIDGeneratorForGodotIcon.png
+res://.godot/imported/default.svg-3f34de5e45bef5de4d9c15ef78c00c6c.ctex to res://.assets/addons/dialogic/Editor/Images/Dropdown/default.png
+res://.godot/imported/divide.svg-4928f878a07ba93ebc44d8ae73ad4c1f.ctex to res://.assets/addons/dialogic/Editor/Images/Dropdown/divide.png
+res://.godot/imported/join.svg-2f0d7b9e8e01cf0e62b8c3a85aff6213.ctex to res://.assets/addons/dialogic/Editor/Images/Dropdown/join.png
+res://.godot/imported/leave.svg-c936f6e3d601b8c12c23f205a765084e.ctex to res://.assets/addons/dialogic/Editor/Images/Dropdown/leave.png
+res://.godot/imported/minus.svg-29f22d1aa24635bae2c03057c07be8bc.ctex to res://.assets/addons/dialogic/Editor/Images/Dropdown/minus.png
+res://.godot/imported/multiply.svg-0e9db99aafb66d43ee14adcca26c5b47.ctex to res://.assets/addons/dialogic/Editor/Images/Dropdown/multiply.png
+res://.godot/imported/plus.svg-e094b0b8505b5d910717883d06553532.ctex to res://.assets/addons/dialogic/Editor/Images/Dropdown/plus.png
+res://.godot/imported/set.svg-f100fad003be2285d5d0da5c58417203.ctex to res://.assets/addons/dialogic/Editor/Images/Dropdown/set.png
+res://.godot/imported/update.svg-cefa0fe6bfa50911bb9a77982288e485.ctex to res://.assets/addons/dialogic/Editor/Images/Dropdown/update.png
+res://.godot/imported/decrement_icon.svg-9556cf56db91e200fb946372e010fd5e.ctex to res://.assets/addons/dialogic/Editor/Images/Interactable/decrement_icon.png
+res://.godot/imported/increment_icon.svg-081e6509e76349f0628c55a41e85fd65.ctex to res://.assets/addons/dialogic/Editor/Images/Interactable/increment_icon.png
+res://.godot/imported/add-folder.svg-41a970370f904038e63c13bddbdb6450.ctex to res://.assets/addons/dialogic/Editor/Images/Pieces/add-folder.png
+res://.godot/imported/closed-icon.svg-b4f16653b91d6792313a130565319b2f.ctex to res://.assets/addons/dialogic/Editor/Images/Pieces/closed-icon.png
+res://.godot/imported/expand-icon.svg-26099b197ab0f314e2253848fcc22962.ctex to res://.assets/addons/dialogic/Editor/Images/Pieces/expand-icon.png
+res://.godot/imported/open-icon.svg-1a2ae6d0121a79b624c0fb87cc9ceea2.ctex to res://.assets/addons/dialogic/Editor/Images/Pieces/open-icon.png
+res://.godot/imported/variable.svg-50a50248b9d47e5556571e4111e8d5b4.ctex to res://.assets/addons/dialogic/Editor/Images/Pieces/variable.png
+res://.godot/imported/warning.svg-a48ae93c4663637f2aca88d055604495.ctex to res://.assets/addons/dialogic/Editor/Images/Pieces/warning.png
+res://.godot/imported/character.svg-48bc1c93fa13733a935ca2c669d933a7.ctex to res://.assets/addons/dialogic/Editor/Images/Resources/character.png
+res://.godot/imported/portrait.svg-7d29c7cfe3e086d65dce33c3d66c48cd.ctex to res://.assets/addons/dialogic/Editor/Images/Resources/portrait.png
+res://.godot/imported/add-character.svg-a658b65c1225b02657a50d5c965e0d5e.ctex to res://.assets/addons/dialogic/Editor/Images/Toolbar/add-character.png
+res://.godot/imported/add-timeline.svg-86961b528ebdf01f585931a15fea1755.ctex to res://.assets/addons/dialogic/Editor/Images/Toolbar/add-timeline.png
+res://.godot/imported/dialogic-logo.svg-e43201cabc9573eeb3f78fd91ea9d909.ctex to res://.assets/addons/dialogic/Editor/Images/dialogic-logo.png
+res://.godot/imported/plugin-icon.svg-aa6701e8ed73f5fe5d177dfddce3a0e3.ctex to res://.assets/addons/dialogic/Editor/Images/plugin-icon.png
+res://.godot/imported/event_portrait_position.svg-f91e8e0cc02545b0b28152d6ef70ff10.ctex to res://.assets/addons/dialogic/Modules/Character/event_portrait_position.png
+res://.godot/imported/icon.svg-4f340f6efbb83004dbd5c761dd1dc448.ctex to res://.assets/addons/dialogic/Modules/Character/icon.png
+res://.godot/imported/update_mirror.svg-d6fa4832a7758cad02a7f32282433230.ctex to res://.assets/addons/dialogic/Modules/Character/update_mirror.png
+res://.godot/imported/update_portrait.svg-b90fa6163d3720d34df8578ce2aa35e1.ctex to res://.assets/addons/dialogic/Modules/Character/update_portrait.png
+res://.godot/imported/update_position.svg.2023_09_23_08_37_47.0.svg-d66e70a05e9de92a595b70fa88fca0d4.ctex to res://.assets/addons/dialogic/Modules/Character/update_position.svg.2023_09_23_08_37_47.0.png
+res://.godot/imported/update_position.svg-4be50608dc0768e715ff659ca62cf187.ctex to res://.assets/addons/dialogic/Modules/Character/update_position.png
+res://.godot/imported/update_z_index.svg-204064db9241de79bf8dfd23af57c6c6.ctex to res://.assets/addons/dialogic/Modules/Character/update_z_index.png
+res://.godot/imported/icon.svg-372a9bfce8bea67fff1988d7acf09a9a.ctex to res://.assets/addons/dialogic/Modules/Choice/icon.png
+res://.godot/imported/clear_background.svg-32f657ae646e5867a8ceb0543ae207de.ctex to res://.assets/addons/dialogic/Modules/Clear/clear_background.png
+res://.godot/imported/clear_characters.svg-58481eec0869d46b2d90f2102edd1687.ctex to res://.assets/addons/dialogic/Modules/Clear/clear_characters.png
+res://.godot/imported/clear_music.svg-ab19a5f3dc85de8ba17b7c720b838a73.ctex to res://.assets/addons/dialogic/Modules/Clear/clear_music.png
+res://.godot/imported/clear_positions.svg-9c6ef9c2e28a63b87a3c7d0ed63620d8.ctex to res://.assets/addons/dialogic/Modules/Clear/clear_positions.png
+res://.godot/imported/clear_style.svg-ab3288e6e47f45c4e12ce1862403a99c.ctex to res://.assets/addons/dialogic/Modules/Clear/clear_style.png
+res://.godot/imported/clear_textbox.svg-04935e3d82350d24a197adcb47df6f57.ctex to res://.assets/addons/dialogic/Modules/Clear/clear_textbox.png
+res://.godot/imported/icon.svg-502d45c064cc30f576b7b105a01357ce.ctex to res://.assets/addons/dialogic/Modules/Condition/icon.png
+res://.godot/imported/background_layer_icon.svg-021cd7ab7c646ee621f9b89b8dfc9d60.ctex to res://.assets/addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/background_layer_icon.png
+res://.godot/imported/popup_glossary_layer_icon.svg-4af96bdb70714a5289a4ffe42cf8f357.ctex to res://.assets/addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/popup_glossary_layer_icon.png
+res://.godot/imported/history_icon.svg-0be9d23e65368ea3983968e4ce0e43d3.ctex to res://.assets/addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_icon.png
+res://.godot/imported/input_layer_icon.svg-3f439e08e8c66cbf3522ce60714f7588.ctex to res://.assets/addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/input_layer_icon.png
+res://.godot/imported/speaker-textbox-icon.svg-e67964032c31cfdc4bf5a376d48a985e.ctex to res://.assets/addons/dialogic/Modules/DefaultLayoutParts/Layer_SpeakerPortraitTextbox/speaker-textbox-icon.png
+res://.godot/imported/text_input_layer_icon.svg-5a1e8bca317bf45f6805d82812407215.ctex to res://.assets/addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer_icon.png
+res://.godot/imported/text_bubble_layer_icon.svg-d46d5806bbf83c1dc50f8d7fc8dac67d.ctex to res://.assets/addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/text_bubble_layer_icon.png
+res://.godot/imported/choices_layer_icon.svg-2f676308da08dddba733cb2bfba8fc69.ctex to res://.assets/addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/choices_layer_icon.png
+res://.godot/imported/portrait_layer_icon.svg-4bc8b0ebd4dd0977a12c09f30758d7e1.ctex to res://.assets/addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/portrait_layer_icon.png
+res://.godot/imported/next.svg-689f85597f487815b8ddefa23d22bf6f.ctex to res://.assets/addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/next.png
+res://.godot/imported/textbox_layer_icon.svg-d6678fedd53dcb59cc32e1c443754ad5.ctex to res://.assets/addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/textbox_layer_icon.png
+res://.godot/imported/add-glossary.svg-1cde77c043d3874d9bc84cc14d0ec9dc.ctex to res://.assets/addons/dialogic/Modules/Glossary/add-glossary.png
+res://.godot/imported/icon.svg-4fc0c12c53379638e37d654e7bbaea1a.ctex to res://.assets/addons/dialogic/Modules/Glossary/icon.png
+res://.godot/imported/definition.svg-dbaabe55d84e4ad95047a50fc6c13843.ctex to res://.assets/addons/dialogic/Modules/History/definition.png
+res://.godot/imported/icon.svg-82841efe3f86e947d4f66fd24dc8f52c.ctex to res://.assets/addons/dialogic/Modules/History/icon.png
+res://.godot/imported/icon_return.svg-dc7fb704ff391638f73cbbc2b30b32fa.ctex to res://.assets/addons/dialogic/Modules/Jump/icon_return.png
+res://.godot/imported/icon.svg-aad0408eebe298e9d92c76d6f2c79cf6.ctex to res://.assets/addons/dialogic/Modules/Save/icon.png
+res://.godot/imported/icon.svg-d4407cb145fa5c1d965de3d2bd63ce5f.ctex to res://.assets/addons/dialogic/Modules/Settings/icon.png
+res://.godot/imported/styles_icon.svg-c55f9f7d15c3512c8b20dbf30eed7047.ctex to res://.assets/addons/dialogic/Modules/StyleEditor/styles_icon.png
+res://.godot/imported/icon.svg-e2501ddcdef01c7f2c3538940f5abfc1.ctex to res://.assets/addons/dialogic/Modules/Text/icon.png
+res://.godot/imported/node_next_indicator_icon.svg-06167a3b3e290941c1c34386ebd60af8.ctex to res://.assets/addons/dialogic/Modules/Text/node_next_indicator_icon.png
+res://.godot/imported/add-variable.svg-26eb3bd7fac746c574d054e8416d3aac.ctex to res://.assets/addons/dialogic/Modules/Variable/add-variable.png
+res://.godot/imported/variable.svg-52aeb47fe1705a3f04d919f8dcd5d319.ctex to res://.assets/addons/dialogic/Modules/Variable/variable.png
+res://.godot/imported/icon.svg-7e9f52b17ae6e5e1f284e12048cb8f05.ctex to res://.assets/addons/dialogic/Modules/Wait/icon.png
+res://.godot/imported/icon.svg-cb8e50b081a310c64183b12c6d12fcf2.ctex to res://.assets/addons/dialogic/Modules/WaitInput/icon.png
+res://.godot/imported/Debug.svg-d4cb8599fa7926b76a2d6e40d2efd949.ctex to res://.assets/addons/discord-rpc-gd/Debug.png
+res://.godot/imported/Checked.svg-80704e37f30c24e2ec3dfc0955f5f21c.ctex to res://.assets/addons/discord-rpc-gd/nodes/assets/Checked.png
+res://.godot/imported/Unchecked.svg-b526adfd78f7b1577fc3c10a8ea626ee.ctex to res://.assets/addons/discord-rpc-gd/nodes/assets/Unchecked.png
+res://.godot/imported/circle.svg-d0b0579c9433c6250a5869daf4f70024.ctex to res://.assets/addons/discord-rpc-gd/nodes/assets/circle.png
+res://.godot/imported/uuidIcon.svg-48139cdc0aaeb5e277234b5acf23dffc.ctex to res://.assets/addons/minos_uuid_generator/uuidIcon.png
+res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex to res://.assets/icon.png
+res://.godot/imported/player_pointer.svg-f332d4a56b0615024881c22931f0f231.ctex to res://.assets/moving_entities/player/player_pointer.png
+res://.godot/imported/djmzop3o.bmp-8ce8defa6a12d035b33dd305e99534d0.ctex to res://.assets/multiplayer/multiplayerLobby/djmzop3o.png
+res://.godot/imported/join_button.svg-203b1aca180408bd17625353a1bca711.ctex to res://.assets/ui/join_button.png
+
+
+------------------------------------------------------------------------------------
+
+Use Godot editor version 4.2.1 to edit the project.
+Note: the project may be using a custom version of Godot. Detection for this has not been implemented yet.
+If you find that you have many non-import errors upon opening the project 
+(i.e. scripts or shaders have many errors), use the original game's binary as the export template.
+
+*******************************************************************************
+

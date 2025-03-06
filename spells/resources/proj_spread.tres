@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Spell" load_steps=5 format=3 uid="uid://gcjnkbwfebfe"]
+
+[ext_resource type="Texture2D" uid="uid://b6b8ne544hjgj" path="res://spells/projections/spread.png" id="1"]
+[ext_resource type="PackedScene" uid="uid://bhx2svxx4h6ay" path="res://spells/scenes/proj_spread/proj_spread.tscn" id="2"]
+[ext_resource type="Script" path="res://spells/spell_base.gd" id="3"]
+[ext_resource type="Texture2D" uid="uid://bl812jtw0j6dq" path="res://spells/sprites/icons/proj_spread.png" id="4"]
+
+[resource]
+script = ExtResource("3")
+suffix = "Spread"
+description = "A short-ranged cone of rapid-damage projectiles."
+scene = ExtResource("2")
+ui_texture = ExtResource("4")
+projection_texture = ExtResource("1")

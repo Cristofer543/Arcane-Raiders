@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://b7d6ookpccn88"
+path="res://.godot/imported/pickup_speed.png-ddc838ec11eae29aebb3f35af7b8845d.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://items/pickups/pickup_speed.png"
+dest_files=["res://.godot/imported/pickup_speed.png-ddc838ec11eae29aebb3f35af7b8845d.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

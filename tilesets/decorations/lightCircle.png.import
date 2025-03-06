@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dftjjs1icgq02"
+path="res://.godot/imported/lightCircle.png-775b90f88ddb8a0697b185caacb84dfc.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://tilesets/decorations/lightCircle.png"
+dest_files=["res://.godot/imported/lightCircle.png-775b90f88ddb8a0697b185caacb84dfc.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

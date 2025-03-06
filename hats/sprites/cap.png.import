@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bsx13sd0vwllp"
+path="res://.godot/imported/cap.png-21369cce0f08c5c08f38ba30be2dae76.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://hats/sprites/cap.png"
+dest_files=["res://.godot/imported/cap.png-21369cce0f08c5c08f38ba30be2dae76.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://csl0e2px0cwc1"
+path="res://.godot/imported/logo.png-bacb448eabae556bdb0659359ea4e4af.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://addons/discord-rpc-gd/logo.png"
+dest_files=["res://.godot/imported/logo.png-bacb448eabae556bdb0659359ea4e4af.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

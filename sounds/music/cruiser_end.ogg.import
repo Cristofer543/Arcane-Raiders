@@ -1,0 +1,15 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cyqq1iqjv4fbx"
+path="res://.godot/imported/cruiser_end.ogg-aecfb1b910052f0609d9617e1c61720e.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/music/cruiser_end.ogg"
+dest_files=["res://.godot/imported/cruiser_end.ogg-aecfb1b910052f0609d9617e1c61720e.oggvorbisstr"]
+
+[params]
+
+dummy_value_ignore_me=0

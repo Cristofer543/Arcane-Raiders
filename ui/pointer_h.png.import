@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://tg8iygj243l6"
+path="res://.godot/imported/pointer_h.png-4e1a76f16751c697b60bc007cc525cfd.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://ui/pointer_h.png"
+dest_files=["res://.godot/imported/pointer_h.png-4e1a76f16751c697b60bc007cc525cfd.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

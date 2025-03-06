@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dcg3cs2q5fjjx"
+path="res://.godot/imported/playstation_button_color_cross_outline.png-200c18e232d502d8964c9b0d51a83786.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://ui/prompts/ps/playstation_button_color_cross_outline.png"
+dest_files=["res://.godot/imported/playstation_button_color_cross_outline.png-200c18e232d502d8964c9b0d51a83786.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

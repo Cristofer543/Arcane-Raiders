@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dlgnwh6r6kto0"
+path="res://.godot/imported/proj_orbit.png-c7bd5bbaf382f2b05a8ee9afd079a683.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://spells/sprites/icons/proj_orbit.png"
+dest_files=["res://.godot/imported/proj_orbit.png-c7bd5bbaf382f2b05a8ee9afd079a683.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

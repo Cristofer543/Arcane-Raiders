@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://drlxxgykev2g2"]
+
+[ext_resource type="Script" path="res://debug/bubble_test.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://d2it0xiap3gnt" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/text_bubble_layer.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://dlx7jcvm52tyw" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/text_bubble.tscn" id="3"]
+[ext_resource type="FontFile" uid="uid://jpoe0li3513x" path="res://ui/fonts/Merriweather-Regular.ttf" id="4"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_5x60y"]
+font_color = Color(0, 0, 0, 1)
+
+[node name="BubbleTest" type="CanvasLayer" node_paths=PackedStringArray("bubble")]
+layer = 0
+script = ExtResource("1")
+bubble = NodePath("TextBubbleLayer/TextBubble")
+
+[node name="TextBubbleLayer" parent="." instance=ExtResource("2")]
+
+[node name="TextBubble" parent="TextBubbleLayer" instance=ExtResource("3")]
+
+[node name="DialogText" parent="TextBubbleLayer/TextBubble" index="1"]
+offset_top = -12.5
+offset_bottom = 12.5
+theme_override_fonts/normal_font = ExtResource("4")
+theme_override_font_sizes/normal_font_size = 18
+start_hidden = false
+
+[node name="NameLabel" parent="TextBubbleLayer/TextBubble/DialogText/NameLabelPositioner/NameLabelPanel" index="0"]
+theme_override_fonts/font = ExtResource("4")
+theme_override_font_sizes/font_size = 18
+text = "test"
+label_settings = SubResource("LabelSettings_5x60y")
+
+[editable path="TextBubbleLayer/TextBubble"]

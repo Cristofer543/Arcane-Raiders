@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://bpgt62vn4epai"]
+
+[ext_resource type="PackedScene" uid="uid://bh70olrrel7l8" path="res://tilesets/decorations/candle.tscn" id="1"]
+[ext_resource type="Shader" path="res://shaders/toon_fire.gdshader" id="2"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_m1ex7"]
+seed = 86
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_7ltec"]
+seamless = true
+noise = SubResource("FastNoiseLite_m1ex7")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tojbc"]
+resource_local_to_scene = true
+shader = ExtResource("2")
+shader_parameter/spread = 0.25
+shader_parameter/speed = 0.1
+shader_parameter/final_saturation = 0.5
+shader_parameter/alpha = 0.66
+shader_parameter/outer_thickness = 0.20000000298023224
+shader_parameter/middle_thickness = 0.4000000059604645
+shader_parameter/noise_tex = SubResource("NoiseTexture2D_7ltec")
+shader_parameter/gradient_tex = null
+shader_parameter/gradient = null
+
+[node name="Candle" instance=ExtResource("1")]
+scale = Vector2(-1, 1)
+
+[node name="Flame" parent="." index="1"]
+material = SubResource("ShaderMaterial_tojbc")
+
+[node name="Flame2" parent="." index="2"]
+material = SubResource("ShaderMaterial_tojbc")
+
+[node name="Flame3" parent="." index="3"]
+material = SubResource("ShaderMaterial_tojbc")

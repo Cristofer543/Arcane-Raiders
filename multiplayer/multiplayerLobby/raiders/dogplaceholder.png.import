@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://b3j4xdfbpv4ku"
+path="res://.godot/imported/dogplaceholder.png-38d66b238ae93e3472a020ff7a145cc6.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://multiplayer/multiplayerLobby/raiders/dogplaceholder.png"
+dest_files=["res://.godot/imported/dogplaceholder.png-38d66b238ae93e3472a020ff7a145cc6.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

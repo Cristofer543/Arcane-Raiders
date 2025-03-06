@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://buhyo18uksn5w"
+path="res://.godot/imported/switch_button_a_outline.png-ae2e930d47dbca403d5f8716a9d84747.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://ui/prompts/sw/switch_button_a_outline.png"
+dest_files=["res://.godot/imported/switch_button_a_outline.png-ae2e930d47dbca403d5f8716a9d84747.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

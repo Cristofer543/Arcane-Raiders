@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bnv0apj8h0k23"
+path="res://.godot/imported/crown.png-059dca9ca0883bfeba7596ab1215468a.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://moving_entities/player/player_pieces/crown.png"
+dest_files=["res://.godot/imported/crown.png-059dca9ca0883bfeba7596ab1215468a.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

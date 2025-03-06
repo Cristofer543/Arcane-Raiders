@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dt35pds71p5v1"
+path="res://.godot/imported/proj_ball.png-0048fb2b26f7f7798b85fb4b1993add4.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://spells/scenes/proj_ball/proj_ball.png"
+dest_files=["res://.godot/imported/proj_ball.png-0048fb2b26f7f7798b85fb4b1993add4.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

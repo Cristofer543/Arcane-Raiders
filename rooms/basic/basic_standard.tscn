@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfdsvgq51s380"]
+
+[ext_resource type="PackedScene" uid="uid://cuesay1mn2uq8" path="res://rooms/castle_room.tscn" id="1"]
+[ext_resource type="Texture2D" uid="uid://ikk12brjvn6d" path="res://debug/enemy_spawn.png" id="2"]
+
+[node name="CastleRoom" instance=ExtResource("1")]
+wave_total_difficulty = [10]
+
+[node name="TileMap" parent="." index="0"]
+layer_3/tile_data = PackedInt32Array(720905, 0, 327680, 196613, 0, 196608, 4, 0, 196608, 393223, 0, 327680, 65538, 0, 131072, 786429, 0, 131072, 393216, 0, 131072, 524294, -1, -1, 655367, -1, -1, 786440, 5, 0, 851976, -1, -1, 917512, -1, -1, 786438, -1, -1, 720901, -1, -1, 655360, -1, -1, 917502, -1, -1, 1179647, -1, -1, 1638402, 5, 1, 1441794, 65541, 0, 1572869, 65541, 3, 1441798, 65541, 0, 1376262, -1, -1, 1179656, -1, -1, 1376255, -1, -1, 1507328, 5, 0, 1507329, -1, -1, 1572866, -1, -1, 1441793, 5, 2, 1310719, -1, -1, 393220, -1, -1, 1048583, -1, -1, 720899, -1, -1, 917503, -1, -1, 1179651, -1, -1, 1048579, -1, -1, 851972, -1, -1, 1572868, -1, -1, 1769476, -1, -1, 655365, 5, 1, 458755, 5, 1, 589827, 5, 1, 1048574, 5, 1, 917504, 65541, 3, 1245183, 5, 3, 1310721, 5, 2, 1376259, 5, 1, 1310726, 65541, 2, 1179655, 65541, 3, 917510, 65541, 0, 983043, 5, 0, 589829, 5, 1, 786431, 0, 983040, 393221, 0, 786432)
+
+[node name="EnemySpawn0" type="Sprite2D" parent="EnemySpawns" index="0"]
+position = Vector2(633, 288)
+texture = ExtResource("2")
+
+[node name="EnemySpawn1" type="Sprite2D" parent="EnemySpawns" index="1"]
+position = Vector2(1376, 661)
+texture = ExtResource("2")
+
+[node name="EnemySpawn2" type="Sprite2D" parent="EnemySpawns" index="2"]
+position = Vector2(631, 1045)
+texture = ExtResource("2")
+
+[editable path="DynamicCamera"]
+[editable path="GuideArrow"]

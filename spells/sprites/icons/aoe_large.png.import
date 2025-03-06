@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cmd2gcq1wvrjl"
+path="res://.godot/imported/aoe_large.png-48aa9da2252832e33f461cd6ceb2bf4d.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://spells/sprites/icons/aoe_large.png"
+dest_files=["res://.godot/imported/aoe_large.png-48aa9da2252832e33f461cd6ceb2bf4d.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

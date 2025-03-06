@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dg4oi66c20d63"
+path="res://.godot/imported/ELECTRC_EFFECTS_SMALL.png-f9fc78c5676b0982d26199a1628f2edf.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://menus/img/ELECTRC_EFFECTS_SMALL.png"
+dest_files=["res://.godot/imported/ELECTRC_EFFECTS_SMALL.png-f9fc78c5676b0982d26199a1628f2edf.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

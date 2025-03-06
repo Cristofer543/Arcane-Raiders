@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bh0sfaks47mhy"
+path="res://.godot/imported/grass3.png-d47253ab59c78cb56b99138ec8c995ad.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://tilesets/decorations/grass3.png"
+dest_files=["res://.godot/imported/grass3.png-d47253ab59c78cb56b99138ec8c995ad.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

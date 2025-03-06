@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://ttsqiyte3q3i"
+path="res://.godot/imported/burn_icon.png-779043245cd8bd7cd3a6ecc74958d042.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://elements/icons/burn_icon.png"
+dest_files=["res://.godot/imported/burn_icon.png-779043245cd8bd7cd3a6ecc74958d042.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

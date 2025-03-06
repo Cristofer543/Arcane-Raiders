@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PromptLibrary" load_steps=6 format=3 uid="uid://dpoi0vsxu6w1e"]
+
+[ext_resource type="Texture2D" uid="uid://cd7mbaslptb5j" path="res://ui/prompts/sw/switch_button_b_outline.png" id="1"]
+[ext_resource type="Script" path="res://ui/prompts/prompt_library.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://du4kx231bm3dm" path="res://ui/prompts/sw/switch_button_y_outline.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://cxpao6rmu6fla" path="res://ui/prompts/sw/switch_button_x_outline.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://buhyo18uksn5w" path="res://ui/prompts/sw/switch_button_a_outline.png" id="5"]
+
+[resource]
+script = ExtResource("2")
+spell0 = ExtResource("3")
+spell1 = ExtResource("4")
+spell2 = ExtResource("5")
+dash = ExtResource("1")

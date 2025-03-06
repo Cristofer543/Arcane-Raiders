@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dhc2a4psbls0o"
+path="res://.godot/imported/proj_burst.png-7465812a0ef283e2091f207a02d3bd99.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://spells/scenes/proj_burst/proj_burst.png"
+dest_files=["res://.godot/imported/proj_burst.png-7465812a0ef283e2091f207a02d3bd99.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://3ivfrcnmlwn8"
+path="res://.godot/imported/small_spider.png-0f5f9c4176e4b82c6f8dc70650381326.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://moving_entities/enemies/bosses/boss_bat/sprites/small_spider.png"
+dest_files=["res://.godot/imported/small_spider.png-0f5f9c4176e4b82c6f8dc70650381326.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

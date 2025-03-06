@@ -1,0 +1,11 @@
+res://managers/default_audio_buses.tres
+res://menus/main_menu.tscn
+res://menus/default_ui_theme.tres
+res://elements/null.tres
+res://elements/wet.tres
+res://elements/shock.tres
+res://elements/burn.tres
+res://elements/frost.tres
+res://elements/wind.tres
+res://elements/stun.tres
+res://tilesets/tileset.tres

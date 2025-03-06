@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bky5welp8idt6"
+path="res://.godot/imported/hornet_recover.png-4189508f74a79b36a2f491b8152f623f.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://moving_entities/enemies/hornet/hornet_recover.png"
+dest_files=["res://.godot/imported/hornet_recover.png-4189508f74a79b36a2f491b8152f623f.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

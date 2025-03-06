@@ -1,0 +1,15 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://brq3aths7d84e"
+path="res://.godot/imported/spike_trap.wav-1bf9c60056a5b75933ee004f449dc6b0.sample"
+
+[deps]
+
+source_file="res://sounds/effects/traps/spike_trap.wav"
+dest_files=["res://.godot/imported/spike_trap.wav-1bf9c60056a5b75933ee004f449dc6b0.sample"]
+
+[params]
+
+dummy_value_ignore_me=0

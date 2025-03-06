@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://ctsc3e26uxgdl"
+path="res://.godot/imported/join_button.svg-203b1aca180408bd17625353a1bca711.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://ui/join_button.svg"
+dest_files=["res://.godot/imported/join_button.svg-203b1aca180408bd17625353a1bca711.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://chorsx3mmyjuv"
+path="res://.godot/imported/spell_click.wav-802546b6387ba3d53e876dd9e5c6af08.sample"
+
+[deps]
+
+source_file="res://sounds/effects/player/spell_click.wav"
+dest_files=["res://.godot/imported/spell_click.wav-802546b6387ba3d53e876dd9e5c6af08.sample"]
+
+[params]
+
+dummy_value_ignore_me=0

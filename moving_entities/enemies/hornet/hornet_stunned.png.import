@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://ce5skuf7g0jls"
+path="res://.godot/imported/hornet_stunned.png-be80ca82f3fe278ee625688469ac08fe.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://moving_entities/enemies/hornet/hornet_stunned.png"
+dest_files=["res://.godot/imported/hornet_stunned.png-be80ca82f3fe278ee625688469ac08fe.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

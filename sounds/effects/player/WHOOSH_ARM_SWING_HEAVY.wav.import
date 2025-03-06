@@ -1,0 +1,15 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://1sh6ehf2p1j8"
+path="res://.godot/imported/WHOOSH_ARM_SWING_HEAVY.wav-b5ab276128e82a04711a92c444a2a6ba.sample"
+
+[deps]
+
+source_file="res://sounds/effects/player/WHOOSH_ARM_SWING_HEAVY.wav"
+dest_files=["res://.godot/imported/WHOOSH_ARM_SWING_HEAVY.wav-b5ab276128e82a04711a92c444a2a6ba.sample"]
+
+[params]
+
+dummy_value_ignore_me=0

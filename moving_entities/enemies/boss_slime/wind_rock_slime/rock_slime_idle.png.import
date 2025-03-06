@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bs6v80dag3ouq"
+path="res://.godot/imported/rock_slime_idle.png-bcd4b388f0261f718519bf2a22b031a7.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://moving_entities/enemies/boss_slime/wind_rock_slime/rock_slime_idle.png"
+dest_files=["res://.godot/imported/rock_slime_idle.png-bcd4b388f0261f718519bf2a22b031a7.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

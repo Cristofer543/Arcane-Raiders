@@ -1,0 +1,55 @@
+[gd_scene load_steps=23 format=3 uid="uid://bircxyrmnpixt"]
+
+[ext_resource type="Script" path="res://managers/spell_manager.gd" id="1"]
+[ext_resource type="Resource" uid="uid://bb41m0v5xy6p3" path="res://elements/burn.tres" id="2"]
+[ext_resource type="Resource" uid="uid://camskexplmxsy" path="res://elements/frost.tres" id="3"]
+[ext_resource type="Resource" uid="uid://ctj0uyr81n57k" path="res://elements/null.tres" id="4"]
+[ext_resource type="Resource" uid="uid://mreb46qhdtv2" path="res://elements/shock.tres" id="5"]
+[ext_resource type="Resource" uid="uid://l0pouj41mexa" path="res://elements/stun.tres" id="6"]
+[ext_resource type="Resource" uid="uid://dq30jen40bp5i" path="res://elements/wet.tres" id="7"]
+[ext_resource type="Resource" uid="uid://bpyrqdxfyvpku" path="res://elements/wind.tres" id="8"]
+[ext_resource type="Resource" uid="uid://bkvdyq3e0uuex" path="res://spells/resources/aoe_large.tres" id="9"]
+[ext_resource type="Resource" uid="uid://c3u0d8wsu652a" path="res://spells/resources/aoe_local.tres" id="10"]
+[ext_resource type="Resource" uid="uid://b0smduujsnsld" path="res://spells/resources/laser.tres" id="11"]
+[ext_resource type="Resource" uid="uid://djq31t76sh4r6" path="res://spells/resources/lasso.tres" id="12"]
+[ext_resource type="Resource" uid="uid://cigud4d5voc78" path="res://spells/resources/proj_ball.tres" id="13"]
+[ext_resource type="Resource" uid="uid://ct07iiqxgguov" path="res://spells/resources/proj_burst.tres" id="14"]
+[ext_resource type="Resource" uid="uid://cvockmiklc8m7" path="res://spells/resources/proj_orbit.tres" id="15"]
+[ext_resource type="Resource" uid="uid://gcjnkbwfebfe" path="res://spells/resources/proj_spread.tres" id="16"]
+[ext_resource type="PackedScene" uid="uid://cxbx5yeaogymo" path="res://spells/reactions/burn-frost/burn-frost.tscn" id="17"]
+[ext_resource type="PackedScene" uid="uid://b70sy17w68ow1" path="res://spells/reactions/frost-wet/frost-wet.tscn" id="18"]
+[ext_resource type="PackedScene" uid="uid://cgcglkyrpkbs5" path="res://spells/reactions/wet-shock/wet-shock.tscn" id="19"]
+[ext_resource type="PackedScene" uid="uid://0u08iljqx1w1" path="res://spells/reactions/shock-wind/shock-wind.tscn" id="20"]
+[ext_resource type="PackedScene" uid="uid://cnvowsw0l752i" path="res://spells/reactions/wind-earth/wind-earth.tscn" id="21"]
+[ext_resource type="PackedScene" uid="uid://bloo38yivbufm" path="res://spells/reactions/stun-burn/stun-burn.tscn" id="22"]
+
+[node name="SpellManager" type="Node"]
+script = ExtResource("1")
+elements = {
+"burn": ExtResource("2"),
+"frost": ExtResource("3"),
+"null": ExtResource("4"),
+"shock": ExtResource("5"),
+"stun": ExtResource("6"),
+"wet": ExtResource("7"),
+"wind": ExtResource("8")
+}
+spell_scenes = {
+"aoe_large": ExtResource("9"),
+"aoe_local": ExtResource("10"),
+"laser": ExtResource("11"),
+"lasso": ExtResource("12"),
+"proj_ball": ExtResource("13"),
+"proj_burst": ExtResource("14"),
+"proj_orbit": ExtResource("15"),
+"proj_spread": ExtResource("16")
+}
+reactions = {
+[ExtResource("2"), ExtResource("3")]: ExtResource("17"),
+[ExtResource("3"), ExtResource("7")]: ExtResource("18"),
+[ExtResource("7"), ExtResource("5")]: ExtResource("19"),
+[ExtResource("5"), ExtResource("8")]: ExtResource("20"),
+[ExtResource("8"), ExtResource("6")]: ExtResource("21"),
+[ExtResource("6"), ExtResource("2")]: ExtResource("22")
+}
+elements_sorted = PackedStringArray("burn", "frost", "wet", "shock", "wind", "stun")

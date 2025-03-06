@@ -1,0 +1,15 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c7ifvirbio4bs"
+path="res://.godot/imported/footstep_concrete_walk_05.wav-f060f73fdeb344e69a6dcf61a7dfa436.sample"
+
+[deps]
+
+source_file="res://sounds/effects/player/footstep_concrete_walk_05.wav"
+dest_files=["res://.godot/imported/footstep_concrete_walk_05.wav-f060f73fdeb344e69a6dcf61a7dfa436.sample"]
+
+[params]
+
+dummy_value_ignore_me=0

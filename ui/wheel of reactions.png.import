@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://b5jb61vijlub3"
+path="res://.godot/imported/wheel of reactions.png-5f77f0ec4b73306adda6d9444f3f6deb.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://ui/wheel of reactions.png"
+dest_files=["res://.godot/imported/wheel of reactions.png-5f77f0ec4b73306adda6d9444f3f6deb.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

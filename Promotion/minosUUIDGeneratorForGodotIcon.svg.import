@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bjc20vfkwgbco"
+path="res://.godot/imported/minosUUIDGeneratorForGodotIcon.svg-750fa742ce9555cdff8e083f49f413ee.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Promotion/minosUUIDGeneratorForGodotIcon.svg"
+dest_files=["res://.godot/imported/minosUUIDGeneratorForGodotIcon.svg-750fa742ce9555cdff8e083f49f413ee.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bg5c1u6qqnvye"
+path="res://.godot/imported/lasso.png-c9bf6a108c8876590c790bf364c54f59.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://spells/sprites/icons/lasso.png"
+dest_files=["res://.godot/imported/lasso.png-c9bf6a108c8876590c790bf364c54f59.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

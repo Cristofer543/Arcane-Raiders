@@ -1,0 +1,255 @@
+[gd_scene load_steps=21 format=3 uid="uid://c8uvt7sepdtkk"]
+
+[ext_resource type="PackedScene" uid="uid://b4dyl3ppwa1rc" path="res://moving_entities/enemies/base_enemy/base_enemy.tscn" id="1"]
+[ext_resource type="Texture2D" uid="uid://dxxil23eudr0v" path="res://moving_entities/enemies/bat_small/small_bat.png" id="2"]
+[ext_resource type="Resource" uid="uid://ctj0uyr81n57k" path="res://elements/null.tres" id="3"]
+[ext_resource type="PackedScene" uid="uid://dneaed1rm6xx2" path="res://moving_entities/enemies/bat_small/bat_attack.tscn" id="4"]
+[ext_resource type="Script" path="res://spells/spell_base.gd" id="5"]
+[ext_resource type="Script" path="res://moving_entities/enemies/States/idle.gd" id="6"]
+[ext_resource type="Script" path="res://moving_entities/enemies/States/bat_chase.gd" id="7"]
+[ext_resource type="Script" path="res://moving_entities/enemies/States/bat_attack.gd" id="8"]
+[ext_resource type="Script" path="res://moving_entities/enemies/States/attack.gd" id="9"]
+[ext_resource type="AudioStream" uid="uid://bpcm3il7ov3bm" path="res://sounds/effects/enemies/Single Bat Call - QuickSounds.com.wav" id="10"]
+
+[sub_resource type="GDScript" id="GDScript_pwqtp"]
+resource_name = "bat_small"
+script/source = "extends EnemyEntity
+"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6k7pk"]
+radius = 71.14830017089844
+
+[sub_resource type="Resource" id="Resource_3gbb5"]
+script = ExtResource("5")
+suffix = ""
+description = ""
+scene = ExtResource("4")
+ui_texture = null
+projection_texture = null
+element = ExtResource("3")
+
+[sub_resource type="Animation" id="Animation_73jvt"]
+length = 0.0010000000474974513
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:hframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [7]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Sprite2D:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("LassoLine:points")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [PackedVector2Array(-13, -2, 14, -5)]
+}
+
+[sub_resource type="Animation" id="Animation_nrjp5"]
+resource_name = "idle"
+length = 0.699999988079071
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:hframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [7]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("LassoLine:points")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [PackedVector2Array(-13, -2, 14, -5), PackedVector2Array(-13, 2, 14, -3), PackedVector2Array(-13, -13, 13, -17), PackedVector2Array(-12, -21, 13, -24), PackedVector2Array(-12, -25, 12, -29), PackedVector2Array(-13, -16, 12, -18), PackedVector2Array(-12, -8, 13, -12)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jtvvf"]
+_data = {
+"RESET": SubResource("Animation_73jvt"),
+"idle": SubResource("Animation_nrjp5")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_eejve"]
+
+[sub_resource type="Curve" id="Curve_aq1wo"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.0983607, 1), 0.0, 0.0, 0, 0, Vector2(0.901639, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="CurveTexture" id="CurveTexture_swxsv"]
+curve = SubResource("Curve_aq1wo")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_f71x6"]
+resource_local_to_scene = true
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(45, 1, 1)
+gravity = Vector3(0, -100, 0)
+alpha_curve = SubResource("CurveTexture_swxsv")
+
+[node name="BatSmall" instance=ExtResource("1")]
+collision_mask = 1
+script = SubResource("GDScript_pwqtp")
+movement_speed = 150.0
+max_health = 150
+health = 300
+
+[node name="PointLight2D" parent="." index="0"]
+position = Vector2(0, -6.91)
+texture_scale = 0.5
+
+[node name="Sprite2D" parent="." index="1"]
+position = Vector2(3, -18)
+texture = ExtResource("2")
+hframes = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox" index="0"]
+position = Vector2(1, 55)
+rotation = -0.11344599723815918
+scale = Vector2(1, 0.685)
+shape = SubResource("CircleShape2D_6k7pk")
+debug_color = Color(0.976471, 0, 0.411765, 0.419608)
+
+[node name="EnemySpells" parent="." index="6"]
+spells = [SubResource("Resource_3gbb5")]
+
+[node name="StateMachine" parent="." index="7" node_paths=PackedStringArray("initial_state")]
+initial_state = NodePath("Idle")
+
+[node name="Idle" type="Node" parent="StateMachine" index="0" node_paths=PackedStringArray("actual_first_state")]
+script = ExtResource("6")
+actual_first_state = NodePath("../BatChase")
+
+[node name="BatChase" type="Node" parent="StateMachine" index="1"]
+script = ExtResource("7")
+transition_range = 400.0
+
+[node name="BatAttack" type="Node" parent="StateMachine" index="2"]
+script = ExtResource("8")
+prefered_range = 300.0
+nav_timer_interval = 1.0
+
+[node name="Attack" type="Node" parent="StateMachine" index="3"]
+script = ExtResource("9")
+transition_out_instantly = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="8"]
+libraries = {
+"": SubResource("AnimationLibrary_jtvvf")
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="9"]
+position = Vector2(1, -6)
+shape = SubResource("CircleShape2D_eejve")
+
+[node name="NavigationAgent2D" parent="." index="10"]
+navigation_layers = 3
+avoidance_layers = 2
+avoidance_mask = 2
+
+[node name="AttackSound" parent="." index="12"]
+stream = ExtResource("10")
+
+[node name="BurnParticles" parent="StatusParticles" index="0"]
+process_material = SubResource("ParticleProcessMaterial_f71x6")
+
+[node name="FrostParticles" parent="StatusParticles" index="1"]
+process_material = SubResource("ParticleProcessMaterial_f71x6")
+
+[node name="ShockParticles" parent="StatusParticles" index="2"]
+process_material = SubResource("ParticleProcessMaterial_f71x6")
+
+[node name="WindParticles" parent="StatusParticles" index="3"]
+process_material = SubResource("ParticleProcessMaterial_f71x6")
+
+[node name="WetParticles" parent="StatusParticles" index="4"]
+process_material = SubResource("ParticleProcessMaterial_f71x6")
+
+[node name="StunParticles" parent="StatusParticles" index="5"]
+process_material = SubResource("ParticleProcessMaterial_f71x6")
+
+[node name="LassoLine" parent="." index="15"]
+points = PackedVector2Array(-13, -2, 14, -5)
+
+[connection signal="health_updated" from="." to="ProgressBar" method="_on_enemy_health_updated"]
+[connection signal="animation_finished" from="AnimationPlayer" to="StateMachine/Attack" method="_on_animation_player_animation_finished"]

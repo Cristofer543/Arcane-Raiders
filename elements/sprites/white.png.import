@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cjnod02s0jvku"
+path="res://.godot/imported/white.png-3df8a4257dde31901afb5d2f8175b61f.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://elements/sprites/white.png"
+dest_files=["res://.godot/imported/white.png-3df8a4257dde31901afb5d2f8175b61f.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

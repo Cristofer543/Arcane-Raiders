@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PromptLibrary" load_steps=6 format=3 uid="uid://bdd8dl70an2ob"]
+
+[ext_resource type="Texture2D" uid="uid://dcg3cs2q5fjjx" path="res://ui/prompts/ps/playstation_button_color_cross_outline.png" id="1"]
+[ext_resource type="Script" path="res://ui/prompts/prompt_library.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://da1niepub7xwn" path="res://ui/prompts/ps/playstation_button_color_square_outline.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://dee71bn7j05ak" path="res://ui/prompts/ps/playstation_button_color_triangle_outline.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://brulxq0vwwba" path="res://ui/prompts/ps/playstation_button_color_circle_outline.png" id="5"]
+
+[resource]
+script = ExtResource("2")
+spell0 = ExtResource("3")
+spell1 = ExtResource("4")
+spell2 = ExtResource("5")
+dash = ExtResource("1")

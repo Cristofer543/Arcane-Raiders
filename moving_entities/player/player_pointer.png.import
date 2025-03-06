@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dw8paowmssdqc"
+path="res://.godot/imported/player_pointer.png-de41b158c30c844ae124248e61f56755.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://moving_entities/player/player_pointer.png"
+dest_files=["res://.godot/imported/player_pointer.png-de41b158c30c844ae124248e61f56755.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

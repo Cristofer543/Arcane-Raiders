@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://ckvnyognf84so"
+path="res://.godot/imported/crocplaceholder.png-7257d4ebafe82221bd740a383625397e.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://multiplayer/multiplayerLobby/raiders/crocplaceholder.png"
+dest_files=["res://.godot/imported/crocplaceholder.png-7257d4ebafe82221bd740a383625397e.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

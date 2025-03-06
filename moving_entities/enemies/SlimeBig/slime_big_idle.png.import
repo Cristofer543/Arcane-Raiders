@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dtl3tdgkt2cbe"
+path="res://.godot/imported/slime_big_idle.png-d9153768bb95eed86a051b50feb49669.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://moving_entities/enemies/SlimeBig/slime_big_idle.png"
+dest_files=["res://.godot/imported/slime_big_idle.png-d9153768bb95eed86a051b50feb49669.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

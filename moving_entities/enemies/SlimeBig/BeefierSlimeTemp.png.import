@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://do3wqsgayie1g"
+path="res://.godot/imported/BeefierSlimeTemp.png-c18338a6262206bb5f5c3074a76d2b7b.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://moving_entities/enemies/SlimeBig/BeefierSlimeTemp.png"
+dest_files=["res://.godot/imported/BeefierSlimeTemp.png-c18338a6262206bb5f5c3074a76d2b7b.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dwde5hnjl5wuc"
+path="res://.godot/imported/laser_straight.png-cef78ca6535ec0c0b62588b4c8c272ae.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://spells/sprites/icons/laser_straight.png"
+dest_files=["res://.godot/imported/laser_straight.png-cef78ca6535ec0c0b62588b4c8c272ae.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

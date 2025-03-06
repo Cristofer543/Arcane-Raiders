@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://ditif1jxkhe82"
+path="res://.godot/imported/ring_shadow.png-177f37e718e77a45353404a096540527.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://tilesets/decorations/ring_shadow.png"
+dest_files=["res://.godot/imported/ring_shadow.png-177f37e718e77a45353404a096540527.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

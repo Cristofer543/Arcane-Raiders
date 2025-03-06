@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cxdexslawiuu8"
+path="res://.godot/imported/lightning_sheet.png-279ea3a2f66c45e19bdbcaf99da55d87.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://spells/reactions/sprites/lightning_sheet.png"
+dest_files=["res://.godot/imported/lightning_sheet.png-279ea3a2f66c45e19bdbcaf99da55d87.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

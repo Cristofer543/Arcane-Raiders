@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://d0sdy2c2pi2hr"
+path="res://.godot/imported/enemy_placeholder.png-1304778311312aee946d782bb0de96f2.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://moving_entities/enemies/enemy_placeholder.png"
+dest_files=["res://.godot/imported/enemy_placeholder.png-1304778311312aee946d782bb0de96f2.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

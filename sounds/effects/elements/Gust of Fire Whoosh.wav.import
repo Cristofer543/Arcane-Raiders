@@ -1,0 +1,15 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dyl3ref2wougv"
+path="res://.godot/imported/Gust of Fire Whoosh.wav-13e47fe119e223b8e11c22cd2011591b.sample"
+
+[deps]
+
+source_file="res://sounds/effects/elements/Gust of Fire Whoosh.wav"
+dest_files=["res://.godot/imported/Gust of Fire Whoosh.wav-13e47fe119e223b8e11c22cd2011591b.sample"]
+
+[params]
+
+dummy_value_ignore_me=0

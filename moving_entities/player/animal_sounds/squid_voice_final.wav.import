@@ -1,0 +1,15 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://3i6xh3su5h8c"
+path="res://.godot/imported/squid_voice_final.wav-6a55ce133e580b6155eaef3bbf280d79.sample"
+
+[deps]
+
+source_file="res://moving_entities/player/animal_sounds/squid_voice_final.wav"
+dest_files=["res://.godot/imported/squid_voice_final.wav-6a55ce133e580b6155eaef3bbf280d79.sample"]
+
+[params]
+
+dummy_value_ignore_me=0

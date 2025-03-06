@@ -1,0 +1,15 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bls73kgbrc7t"
+path="res://.godot/imported/019 FS030602.wav-d803ef60a06c6778eb1c25659331d251.sample"
+
+[deps]
+
+source_file="res://sounds/effects/enemies/019 FS030602.wav"
+dest_files=["res://.godot/imported/019 FS030602.wav-d803ef60a06c6778eb1c25659331d251.sample"]
+
+[params]
+
+dummy_value_ignore_me=0

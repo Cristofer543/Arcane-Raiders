@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://0p4u7bmqtuio"
+path="res://.godot/imported/verticalWhite.png-853b419e1c410ef42035398c1af61c29.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://menus/img/verticalWhite.png"
+dest_files=["res://.godot/imported/verticalWhite.png-853b419e1c410ef42035398c1af61c29.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

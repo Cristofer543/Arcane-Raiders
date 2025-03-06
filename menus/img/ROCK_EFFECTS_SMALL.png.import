@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bnv1hr4yvuwr5"
+path="res://.godot/imported/ROCK_EFFECTS_SMALL.png-7f5df7fbf2e444d67a228fd4b1296864.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://menus/img/ROCK_EFFECTS_SMALL.png"
+dest_files=["res://.godot/imported/ROCK_EFFECTS_SMALL.png-7f5df7fbf2e444d67a228fd4b1296864.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

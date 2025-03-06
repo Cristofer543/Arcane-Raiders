@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://wnms02d8lafe"
+path="res://.godot/imported/slime_big_attack.png-7bdef88c5cdb02220aaaa8bd6cf5fed7.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://moving_entities/enemies/SlimeBig/slime_big_attack.png"
+dest_files=["res://.godot/imported/slime_big_attack.png-7bdef88c5cdb02220aaaa8bd6cf5fed7.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

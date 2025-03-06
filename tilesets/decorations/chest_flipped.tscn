@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cugv20my35lbv"]
+
+[ext_resource type="PackedScene" uid="uid://7ic6tmc26syr" path="res://tilesets/decorations/chest.tscn" id="1"]
+
+[node name="Chest" instance=ExtResource("1")]
+scale = Vector2(-1, 1)

@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://c8gmgei3rcbjw"
+path="res://.godot/imported/plus.png-706f050477ddc09dc445599c92f75746.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://ui/plus.png"
+dest_files=["res://.godot/imported/plus.png-706f050477ddc09dc445599c92f75746.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

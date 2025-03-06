@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cchp2b44r2wv7"
+path="res://.godot/imported/bat_dash_new.png-abfa111ced19e722db3ed502b79fe0bc.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://moving_entities/enemies/bosses/boss_bat/sprites/bat_dash_new.png"
+dest_files=["res://.godot/imported/bat_dash_new.png-abfa111ced19e722db3ed502b79fe0bc.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

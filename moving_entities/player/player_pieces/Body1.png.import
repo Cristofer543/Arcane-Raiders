@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bdirjffmtu0p7"
+path="res://.godot/imported/Body1.png-597b38483be5dc1f4ff81541325fbdf4.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://moving_entities/player/player_pieces/Body1.png"
+dest_files=["res://.godot/imported/Body1.png-597b38483be5dc1f4ff81541325fbdf4.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

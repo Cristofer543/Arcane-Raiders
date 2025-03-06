@@ -1,0 +1,15 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ww0xg3tqwnkt"
+path="res://.godot/imported/simple_zaps_pixabay.wav-75e2870b47c850b0e0f92ab129eb12fa.sample"
+
+[deps]
+
+source_file="res://sounds/effects/elements/simple_zaps_pixabay.wav"
+dest_files=["res://.godot/imported/simple_zaps_pixabay.wav-75e2870b47c850b0e0f92ab129eb12fa.sample"]
+
+[params]
+
+dummy_value_ignore_me=0

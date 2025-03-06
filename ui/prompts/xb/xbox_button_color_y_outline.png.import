@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://wpnjv4s44y2a"
+path="res://.godot/imported/xbox_button_color_y_outline.png-000b25a85f4b71442d452520d0a9bc29.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://ui/prompts/xb/xbox_button_color_y_outline.png"
+dest_files=["res://.godot/imported/xbox_button_color_y_outline.png-000b25a85f4b71442d452520d0a9bc29.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

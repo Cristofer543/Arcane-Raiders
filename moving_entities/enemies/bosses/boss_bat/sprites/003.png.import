@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://7518x25dosji"
+path="res://.godot/imported/003.png-d98b4001de88fb4d7a1ddc50fb5e8963.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://moving_entities/enemies/bosses/boss_bat/sprites/003.png"
+dest_files=["res://.godot/imported/003.png-d98b4001de88fb4d7a1ddc50fb5e8963.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

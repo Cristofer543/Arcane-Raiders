@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bw0y7jdbkvkk"
+path="res://.godot/imported/tiles_library.png-bc26219d0c0f4a17ebfd9f87706ed60c.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://tilesets/tiles_library.png"
+dest_files=["res://.godot/imported/tiles_library.png-bc26219d0c0f4a17ebfd9f87706ed60c.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

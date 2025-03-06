@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://8e3f4ke48uho"
+path="res://.godot/imported/spike_trap_peek.png-dcd477855901e39c526f806278680abc.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://tilesets/traps/spike_traps/spike_trap_peek.png"
+dest_files=["res://.godot/imported/spike_trap_peek.png-dcd477855901e39c526f806278680abc.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://o4ybtnyr1byl"
+path="res://.godot/imported/healing.png-6c4cbd15fee78f0e065c2500c6ee492d.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://moving_entities/enemies/healing.png"
+dest_files=["res://.godot/imported/healing.png-6c4cbd15fee78f0e065c2500c6ee492d.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://b0wd7cki57iq3"
+path="res://.godot/imported/splash2.png-fb2f9ad58df124f20cc440a68d041071.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://menus/img/splash2.png"
+dest_files=["res://.godot/imported/splash2.png-fb2f9ad58df124f20cc440a68d041071.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

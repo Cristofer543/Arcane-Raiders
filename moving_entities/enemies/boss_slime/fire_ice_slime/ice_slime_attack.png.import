@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://wd4ue2qjhkps"
+path="res://.godot/imported/ice_slime_attack.png-54209fea4a428ab3c52db613f3663502.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://moving_entities/enemies/boss_slime/fire_ice_slime/ice_slime_attack.png"
+dest_files=["res://.godot/imported/ice_slime_attack.png-54209fea4a428ab3c52db613f3663502.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

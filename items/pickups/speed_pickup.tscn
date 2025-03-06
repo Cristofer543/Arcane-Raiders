@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://ccjuaawldv0ad"]
+
+[ext_resource type="PackedScene" uid="uid://cg1b6cwhpo8yx" path="res://items/pickups/pickup_scene.tscn" id="1"]
+[ext_resource type="Script" path="res://items/pickups/pickup_base.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://b7d6ookpccn88" path="res://items/pickups/pickup_speed.png" id="3"]
+
+[node name="Speed_pickup" instance=ExtResource("1")]
+script = ExtResource("2")
+effect_type = 1
+
+[node name="Icon" parent="." index="1"]
+texture = ExtResource("3")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

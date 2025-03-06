@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://d35w38pkxhkwr"
+path="res://.godot/imported/001.png-0d33e662c3f098597aa737051d1e13fc.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://moving_entities/enemies/bee/001.png"
+dest_files=["res://.godot/imported/001.png-0d33e662c3f098597aa737051d1e13fc.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

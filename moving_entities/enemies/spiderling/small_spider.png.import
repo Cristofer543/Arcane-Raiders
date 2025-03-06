@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dedf7lpalc67v"
+path="res://.godot/imported/small_spider.png-479c137bfc960a40c77bda4f4ffc59c5.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://moving_entities/enemies/spiderling/small_spider.png"
+dest_files=["res://.godot/imported/small_spider.png-479c137bfc960a40c77bda4f4ffc59c5.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

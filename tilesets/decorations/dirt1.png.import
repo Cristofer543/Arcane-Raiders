@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://btamxs2mkjwox"
+path="res://.godot/imported/dirt1.png-1853d0f6f41492ab14b235370baa55b5.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://tilesets/decorations/dirt1.png"
+dest_files=["res://.godot/imported/dirt1.png-1853d0f6f41492ab14b235370baa55b5.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

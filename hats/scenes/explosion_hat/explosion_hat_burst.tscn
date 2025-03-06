@@ -1,0 +1,52 @@
+[gd_scene load_steps=11 format=3 uid="uid://yqr866dsh3bp"]
+
+[ext_resource type="PackedScene" uid="uid://cxv6ps3wfo0nu" path="res://spells/scenes/explosion.tscn" id="1"]
+[ext_resource type="Shader" path="res://shaders/tilemap_gradient_map.gdshader" id="2"]
+[ext_resource type="PackedScene" uid="uid://sps1j7ba4ag0" path="res://spells/scenes/aoe_local/aoe_local_sprite.tscn" id="3"]
+
+[sub_resource type="Gradient" id="Gradient_f7grb"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ejo71"]
+gradient = SubResource("Gradient_f7grb")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pto4o"]
+resource_local_to_scene = true
+shader = ExtResource("2")
+shader_parameter/final_saturation = 0.5
+shader_parameter/alpha = 1.0
+shader_parameter/gradient = SubResource("GradientTexture1D_ejo71")
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0qlas"]
+radius = 125.0
+
+[sub_resource type="Gradient" id="Gradient_gml7d"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_0rff4"]
+gradient = SubResource("Gradient_gml7d")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sgqur"]
+resource_local_to_scene = true
+shader = ExtResource("2")
+shader_parameter/final_saturation = 0.5
+shader_parameter/alpha = 1.0
+shader_parameter/gradient = SubResource("GradientTexture1D_0rff4")
+
+[node name="explosion_hat_burst" instance=ExtResource("1")]
+material = SubResource("ShaderMaterial_pto4o")
+knockback = 10.0
+
+[node name="PointLight2D" parent="." index="0"]
+visible = false
+
+[node name="Sprite2D" parent="." index="1"]
+visible = false
+
+[node name="CollisionShape2D" parent="." index="2"]
+scale = Vector2(1, 0.5)
+shape = SubResource("CircleShape2D_0qlas")
+
+[node name="kill_timer" parent="." index="3"]
+wait_time = 0.3
+
+[node name="aoe_local_sprite" parent="." index="4" instance=ExtResource("3")]
+material = SubResource("ShaderMaterial_sgqur")

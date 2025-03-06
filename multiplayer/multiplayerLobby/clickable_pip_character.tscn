@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://cdic02fvsofc2"]
+
+[ext_resource type="Script" path="res://multiplayer/multiplayerLobby/clickable_pip_character.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://8l32kgiedlxf" path="res://moving_entities/player/player_pieces/head-cat.png" id="2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_drhxr"]
+bg_color = Color(0, 0, 0, 0)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m1ite"]
+resource_local_to_scene = true
+atlas = ExtResource("2")
+region = Rect2(35, 35, 80, 80)
+
+[node name="ClickablePip" type="PanelContainer" node_paths=PackedStringArray("head")]
+mouse_default_cursor_shape = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_drhxr")
+script = ExtResource("1")
+head = NodePath("TextureRect")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+texture = SubResource("AtlasTexture_m1ite")
+expand_mode = 1
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
+[connection signal="gui_input" from="TextureRect" to="." method="_on_gui_input"]

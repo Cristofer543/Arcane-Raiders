@@ -1,0 +1,64 @@
+[gd_scene load_steps=8 format=3 uid="uid://dff12rdqx482b"]
+
+[ext_resource type="Shader" path="res://shaders/tilemap_gradient_map.gdshader" id="1"]
+[ext_resource type="Script" path="res://rooms/exit/room_exit.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://r2gf37mnk185" path="res://rooms/exit/exit_locked2.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://dmhbueqf27y88" path="res://rooms/exit/exit_unlocked2.png" id="4"]
+
+[sub_resource type="Gradient" id="Gradient_64wdj"]
+offsets = PackedFloat32Array(0, 0.257576, 0.424242, 0.621212, 0.838384)
+colors = PackedColorArray(0.027451, 0, 0.172549, 1, 0.187822, 0.00216718, 0.259236, 1, 0.6, 0.0156863, 0.278431, 1, 0.870588, 0.388235, 0.266667, 1, 0.948188, 0.714519, 0.479285, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_j302i"]
+gradient = SubResource("Gradient_64wdj")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6hygc"]
+shader = ExtResource("1")
+shader_parameter/final_saturation = 0.5
+shader_parameter/alpha = 1.0
+shader_parameter/gradient = SubResource("GradientTexture1D_j302i")
+
+[node name="RoomExit" type="Area2D"]
+material = SubResource("ShaderMaterial_6hygc")
+collision_layer = 0
+collision_mask = 4
+script = ExtResource("2")
+locked_texture = ExtResource("3")
+unlocked_texture = ExtResource("4")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-141, 45, 67, 158, 80, 106, -93.42, 21.505)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+use_parent_material = true
+position = Vector2(0, -18)
+texture = ExtResource("4")
+
+[node name="LabelSize" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_top = -129.0
+offset_right = 40.0
+offset_bottom = -89.0
+
+[node name="Label" type="Label" parent="LabelSize"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -132.5
+offset_top = -61.0
+offset_right = 92.5
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 24
+text = "Players ready: 1/4"
+horizontal_alignment = 1
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

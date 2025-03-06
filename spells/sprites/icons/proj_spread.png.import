@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bl812jtw0j6dq"
+path="res://.godot/imported/proj_spread.png-1119a2d23bb23f13865efb1e79401116.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://spells/sprites/icons/proj_spread.png"
+dest_files=["res://.godot/imported/proj_spread.png-1119a2d23bb23f13865efb1e79401116.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

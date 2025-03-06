@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://reyrua0dcxmu"
+path="res://.godot/imported/cracks_tileset.png-b7a88be7952a992dc5521382634d3f60.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://tilesets/decorations/cracks_tileset.png"
+dest_files=["res://.godot/imported/cracks_tileset.png-b7a88be7952a992dc5521382634d3f60.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

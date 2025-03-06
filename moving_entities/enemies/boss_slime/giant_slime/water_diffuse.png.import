@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cqvvmtq5kce48"
+path="res://.godot/imported/water_diffuse.png-3b4bac4369dc42be323f95a52276bc47.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://moving_entities/enemies/boss_slime/giant_slime/water_diffuse.png"
+dest_files=["res://.godot/imported/water_diffuse.png-3b4bac4369dc42be323f95a52276bc47.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

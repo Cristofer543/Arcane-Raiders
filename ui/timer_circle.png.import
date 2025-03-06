@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://djpicus4kp4nx"
+path="res://.godot/imported/timer_circle.png-2f68c53a0cb5ae76b0bd7eb38a3163f2.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://ui/timer_circle.png"
+dest_files=["res://.godot/imported/timer_circle.png-2f68c53a0cb5ae76b0bd7eb38a3163f2.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

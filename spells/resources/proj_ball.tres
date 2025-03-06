@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Spell" load_steps=5 format=3 uid="uid://cigud4d5voc78"]
+
+[ext_resource type="Texture2D" uid="uid://d05bffs8s001d" path="res://spells/projections/straight.png" id="1"]
+[ext_resource type="PackedScene" uid="uid://c4td8rjmyf2lq" path="res://spells/scenes/proj_ball/proj_ball.tscn" id="2"]
+[ext_resource type="Script" path="res://spells/spell_base.gd" id="3"]
+[ext_resource type="Texture2D" uid="uid://yu01ce7fyhi1" path="res://spells/sprites/icons/proj_ball.png" id="4"]
+
+[resource]
+script = ExtResource("3")
+suffix = "Ball"
+description = "A projectile that explodes on contact."
+scene = ExtResource("2")
+ui_texture = ExtResource("4")
+projection_texture = ExtResource("1")

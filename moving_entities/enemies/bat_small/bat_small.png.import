@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://by5ilqlhkdeaq"
+path="res://.godot/imported/bat_small.png-c72a51ccdd0b0e689bc6da9126056015.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://moving_entities/enemies/bat_small/bat_small.png"
+dest_files=["res://.godot/imported/bat_small.png-c72a51ccdd0b0e689bc6da9126056015.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

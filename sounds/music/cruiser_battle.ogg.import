@@ -1,0 +1,15 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dq3w8fbh02k06"
+path="res://.godot/imported/cruiser_battle.ogg-2cdb5c714bb00d7d864d3a8ec9ef4ead.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/music/cruiser_battle.ogg"
+dest_files=["res://.godot/imported/cruiser_battle.ogg-2cdb5c714bb00d7d864d3a8ec9ef4ead.oggvorbisstr"]
+
+[params]
+
+dummy_value_ignore_me=0

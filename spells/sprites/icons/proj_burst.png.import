@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://b2xorjixatitx"
+path="res://.godot/imported/proj_burst.png-7433661101771da42b12c53bc2682080.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://spells/sprites/icons/proj_burst.png"
+dest_files=["res://.godot/imported/proj_burst.png-7433661101771da42b12c53bc2682080.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

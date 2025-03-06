@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://f6vpn242a47v"
+path="res://.godot/imported/catplaceholder.png-fc0c9bdc5574fe82788b492f8b027402.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://multiplayer/multiplayerLobby/raiders/catplaceholder.png"
+dest_files=["res://.godot/imported/catplaceholder.png-fc0c9bdc5574fe82788b492f8b027402.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

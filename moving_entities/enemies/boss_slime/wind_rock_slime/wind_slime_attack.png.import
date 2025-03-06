@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bjcnqpllg1whj"
+path="res://.godot/imported/wind_slime_attack.png-1356ec0e43d9f0e0c8d99d76caef6008.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://moving_entities/enemies/boss_slime/wind_rock_slime/wind_slime_attack.png"
+dest_files=["res://.godot/imported/wind_slime_attack.png-1356ec0e43d9f0e0c8d99d76caef6008.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

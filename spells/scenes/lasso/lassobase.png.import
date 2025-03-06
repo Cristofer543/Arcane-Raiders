@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cemt4b8oe530u"
+path="res://.godot/imported/lassobase.png-8ab6b2006662736451462321f18e817b.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://spells/scenes/lasso/lassobase.png"
+dest_files=["res://.godot/imported/lassobase.png-8ab6b2006662736451462321f18e817b.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

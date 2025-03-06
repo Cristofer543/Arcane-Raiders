@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="RaiderRes" load_steps=5 format=3 uid="uid://drqi1u52scxpe"]
+
+[ext_resource type="AudioStream" uid="uid://cv8iftko0jorm" path="res://moving_entities/player/animal_sounds/dragon-growl-37570.wav" id="1"]
+[ext_resource type="Texture2D" uid="uid://dnl3aaxl1x12t" path="res://moving_entities/player/player_pieces/head-croc-2.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://c0ldbdysuqp8l" path="res://multiplayer/multiplayerLobby/raiders/owlplaceholder.png" id="3"]
+[ext_resource type="Script" path="res://multiplayer/multiplayerLobby/raiderRes.gd" id="4"]
+
+[resource]
+script = ExtResource("4")
+portrait = ExtResource("3")
+raider_name = "Croc"
+raider_desc = "grrr!!"
+color = Color(0.203922, 0.282353, 0.541176, 1)
+head_texture = ExtResource("2")
+skin_color = Color(0.129412, 0.137255, 0.152941, 1)
+animal_sound = ExtResource("1")

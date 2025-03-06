@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://dkddso5vqusth"]
+
+[ext_resource type="Script" path="res://moving_entities/enemies/attack_scripts/e_proj_cone.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://dbs1vsyw2tupn" path="res://moving_entities/enemies/bosses/boss_bat/b_bat_proj.tscn" id="2"]
+[ext_resource type="Texture2D" uid="uid://bv057vww5gngt" path="res://moving_entities/enemies/bat_small/small-bullet.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://ph4uvoqc6xmc" path="res://tilesets/decorations/2d_lights_and_shadows_neutral_point_light.png" id="4"]
+
+[node name="BBatFission" type="Node2D"]
+script = ExtResource("1")
+bullet_scene = ExtResource("2")
+cone_range_deg = 180.0
+bullets = 2
+delay_fire = true
+delay_time = 0.5
+infliction_time = 2.0
+start_time = 1.0
+cooldown_time = 10.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.356863)
+texture = ExtResource("3")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+energy = 0.5
+texture = ExtResource("4")

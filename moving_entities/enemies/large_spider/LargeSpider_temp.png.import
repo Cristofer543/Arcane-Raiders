@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bmi2knc8yb56p"
+path="res://.godot/imported/LargeSpider_temp.png-c82253c2f759059d527ea05c37c51943.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://moving_entities/enemies/large_spider/LargeSpider_temp.png"
+dest_files=["res://.godot/imported/LargeSpider_temp.png-c82253c2f759059d527ea05c37c51943.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://g5hk04tkm5he"
+path="res://.godot/imported/big slime.png-2ffdf039ec547a901f3e22b98d49bdb9.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://moving_entities/enemies/Dummy/big slime.png"
+dest_files=["res://.godot/imported/big slime.png-2ffdf039ec547a901f3e22b98d49bdb9.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

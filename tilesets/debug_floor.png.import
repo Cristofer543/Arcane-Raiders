@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dne17rrsp52db"
+path="res://.godot/imported/debug_floor.png-05a574d5999c142d21100777d66d986d.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://tilesets/debug_floor.png"
+dest_files=["res://.godot/imported/debug_floor.png-05a574d5999c142d21100777d66d986d.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

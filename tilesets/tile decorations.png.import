@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cw83orwblyhof"
+path="res://.godot/imported/tile decorations.png-b29b4c12b17587d31b767aa430607ac6.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://tilesets/tile decorations.png"
+dest_files=["res://.godot/imported/tile decorations.png-b29b4c12b17587d31b767aa430607ac6.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

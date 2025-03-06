@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cccbtx0s5e3k2"
+path="res://.godot/imported/spiderling_move.png-70e418ab56817f360d5e2f3c37fa885d.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://moving_entities/enemies/spiderling/spiderling_move.png"
+dest_files=["res://.godot/imported/spiderling_move.png-70e418ab56817f360d5e2f3c37fa885d.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Spell" load_steps=5 format=3 uid="uid://b0smduujsnsld"]
+
+[ext_resource type="Texture2D" uid="uid://d05bffs8s001d" path="res://spells/projections/straight.png" id="1"]
+[ext_resource type="PackedScene" uid="uid://ql2ywssd2ilf" path="res://spells/scenes/laser_straight/laser_straight.tscn" id="2"]
+[ext_resource type="Script" path="res://spells/spell_base.gd" id="3"]
+[ext_resource type="Texture2D" uid="uid://dwde5hnjl5wuc" path="res://spells/sprites/icons/laser_straight.png" id="4"]
+
+[resource]
+script = ExtResource("3")
+suffix = "Laser"
+description = "A laser that pierces enemies."
+scene = ExtResource("2")
+ui_texture = ExtResource("4")
+projection_texture = ExtResource("1")

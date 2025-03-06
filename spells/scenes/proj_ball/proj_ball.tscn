@@ -1,0 +1,25 @@
+[gd_scene load_steps=7 format=3 uid="uid://c4td8rjmyf2lq"]
+
+[ext_resource type="PackedScene" uid="uid://c1m7ibet8h0u5" path="res://spells/scenes/spell_scene_base.tscn" id="1"]
+[ext_resource type="Shader" path="res://shaders/tilemap_gradient_map.gdshader" id="2"]
+[ext_resource type="Script" path="res://spells/scenes/proj_ball/proj_ball.gd" id="3"]
+
+[sub_resource type="Gradient" id="Gradient_1mn2o"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_nati4"]
+gradient = SubResource("Gradient_1mn2o")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6x1un"]
+resource_local_to_scene = true
+shader = ExtResource("2")
+shader_parameter/final_saturation = 0.5
+shader_parameter/alpha = 1.0
+shader_parameter/gradient = SubResource("GradientTexture1D_nati4")
+
+[node name="ProjBall" instance=ExtResource("1")]
+material = SubResource("ShaderMaterial_6x1un")
+script = ExtResource("3")
+base_damage = 75
+infliction_time = 1.5
+cooldown_time = 2.0
+play_sound_on_cast = false

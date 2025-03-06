@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dxww667gtraf1"
+path="res://.godot/imported/dumby.png-09001595bdff7cebc8df4ab8dcb01a37.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://moving_entities/enemies/Dummy/dumby.png"
+dest_files=["res://.godot/imported/dumby.png-09001595bdff7cebc8df4ab8dcb01a37.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bq0x8mvs6f27s"
+path="res://.godot/imported/large_bullet.png-dc09027673060afdf406393587a6dad2.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://moving_entities/enemies/boss_slime/water_slime/large_bullet.png"
+dest_files=["res://.godot/imported/large_bullet.png-dc09027673060afdf406393587a6dad2.ctex"]
+
+[params]
+
+dummy_value_ignore_me=0

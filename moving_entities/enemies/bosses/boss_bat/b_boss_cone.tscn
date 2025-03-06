@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://42pqgoacrk05"]
+
+[ext_resource type="Script" path="res://moving_entities/enemies/attack_scripts/e_proj_cone.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://dbs1vsyw2tupn" path="res://moving_entities/enemies/bosses/boss_bat/b_bat_proj.tscn" id="2"]
+
+[node name="BBossCone" type="Node2D"]
+position = Vector2(315, 237)
+script = ExtResource("1")
+bullet_scene = ExtResource("2")
+cone_range_deg = 100.0
+bullets = 15
+base_damage = 100
+infliction_time = 2.0
+cooldown_time = 5.0
